@@ -1,0 +1,205 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mi Aplicación</title>
+    </head>
+    <head>
+        <title>Menu de tres botones</title>
+    </head>
+    <head>
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #3c9c84;
+            }
+        </style>
+    </head>
+    <head>
+        Mascota, IMC, Signo zodiacal
+    </head>
+    <body>
+        <div class="container">
+            <ul class="nav nav-pills mt-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#seccion1" data-toggle="pill">Sección 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccion2" data-toggle="pill">Sección 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccion3" data-toggle="pill">Sección 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="seccion1">
+                    <h3 class="mt-2">Ingrese los detalles de su mascota</h3>
+                    <form id="petForm">
+                        <head>
+                            <style>
+                                .center {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 50px;
+                                    border: 3px solid green;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                        
+                        <h2>Descripcion</h2>
+                        
+                        <div class="center">
+                          Billy es un gato casi todo blanco con una mancha negra
+                        </div>
+                        
+                   
+                        
+                        <img src="data:image/jpeg;base64,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" alt="Descripción de la imagen">
+                        
+                        </body>
+                        <div class="form-group">
+                            <label for="petName">Nombre de la mascota</label>
+                            <input type="text" class="form-control" id="petName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="petAge">Edad de la mascota (en años de mascotas)</label>
+                            <input type="number" class="form-control" id="petAge" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="petType">Tipo de mascota</label>
+                            <select class="form-control" id="petType" required>
+                                <option value="">Seleccione...</option>
+                                <option value="perro">Perro</option>
+                                <option value="gato">Gato</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                    <div id="petInfo" class="mt-3" style="display: none;"></div>
+                </div>
+                <div class="tab-pane fade" id="seccion2">
+                    <h3 class="mt-2">Sección 2</h3>
+                    <body>
+                        <div class="container">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                
+                                <button type="button" class="btn btn-secondary" id="imcBtn">IMC</button>
+                                
+                            </div>
+                            <div id="imcSection" style="display: none;">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="altura">Altura (m)</label>
+                                        <input type="number" class="form-control" id="altura">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="peso">Peso (kg)</label>
+                                        <input type="number" class="form-control" id="peso">
+                                    </div>
+                                    <button type="button" class="btn btn-primary" id="calcularBtn">Calcular IMC</button>
+                                </form>
+                                <p id="resultado"></p>
+                            </div>
+                        </div>
+                        
+                </div>
+                <div class="tab-pane fade" id="seccion3">
+                    <h3 class="mt-2">Sección 3</h3>
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          
+                            <button type="button" class="btn btn-secondary">Signo zodiacal</button>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                            </div>
+                            <button type="button" id="zodiaco" class="btn btn-primary">Zodiaco</button>
+                        </form>
+                        <p id="signoZodiacal"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            document.getElementById('petForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var petName = document.getElementById('petName').value;
+                var petAge = document.getElementById('petAge').value;
+                var petType = document.getElementById('petType').value;
+                var humanYears = petType === 'perro' ? petAge * 7 : petAge * 5;
+                document.getElementById('petInfo').innerHTML = '<h4>' + petName + '</h4><p>Edad en años humanos: ' + humanYears + '</p>';
+                document.getElementById('petInfo').style.display = 'block';
+            });
+        </script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+         <script>
+             $(document).ready(function() {
+                 $('#imcBtn').click(function() {
+                     $('#imcSection').toggle();
+                 });
+                 $('#calcularBtn').click(function() {
+                     var altura = $('#altura').val();
+                     var peso = $('#peso').val();
+                     var imc = peso / (altura * altura);
+                     var resultado = '';
+                     if (imc < 18.5) {
+                         resultado = 'Bajo peso';
+                     } else if (imc < 24.9) {
+                         resultado = 'Normal';
+                     } else if (imc < 29.9) {
+                         resultado = 'Sobrepeso';
+                     } else {
+                         resultado = 'Obeso';
+                     }
+                     $('#resultado').text('Tu IMC es ' + imc.toFixed(2) + ', lo que indica que estás en la categoría: ' + resultado);
+                 });
+             });
+         </script>
+                            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                            <script>
+                                document.getElementById('zodiaco').addEventListener('click', function() {
+                                    var fechaNacimiento = new Date(document.getElementById('fechaNacimiento').value);
+                                    var mes = fechaNacimiento.getMonth() + 1;
+                                    var dia = fechaNacimiento.getDate();
+                                    var signo = '';
+                                    if ((mes == 1 && dia >= 20) || (mes == 2 && dia <= 18)) signo = 'Acuario';
+                                    else if ((mes == 2 && dia >= 19) || (mes == 3 && dia <= 20)) signo = 'Piscis';
+                                    else if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19)) signo = 'Aries';
+                                    else if ((mes == 4 && dia >= 20) || (mes == 5 && dia <= 20)) signo = 'Tauro';
+                                    else if ((mes == 5 && dia >= 21) || (mes == 6 && dia <= 20)) signo = 'Géminis';
+                                    else if ((mes == 6 && dia >= 21) || (mes == 7 && dia <= 22)) signo = 'Cáncer';
+                                    else if ((mes == 7 && dia >= 23) || (mes == 8 && dia <= 22)) signo = 'Leo';
+                                    else if ((mes == 8 && dia >= 23) || (mes == 9 && dia <= 22)) signo = 'Virgo';
+                                    else if ((mes == 9 && dia >= 23) || (mes == 10 && dia <= 22)) signo = 'Libra';
+                                    else if ((mes == 10 && dia >= 23) || (mes == 11 && dia <= 21)) signo = 'Escorpio';
+                                    else if ((mes == 11 && dia >= 22) || (mes == 12 && dia <= 21)) signo = 'Sagitario';
+                                    else if ((mes == 12 && dia >= 22) || (mes == 1 && dia <= 19)) signo = 'Capricornio';
+                                    document.getElementById('signoZodiacal').innerText = 'Tu signo zodiacal es ' + signo;
+                                });
+                            </script>
+                        </body>
+     
+    </body>
+       
+   
+
+
+
+
+
+
+
+
+</html>
+</DOCTYPE>
